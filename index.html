@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="assets/images/570a4a199837dd8593189f421c076fea.jpg">
+    <title>MusicStore</title>
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
+    <link rel="stylesheet" href="assets\stylesheets\fontawesome-free-5.0.8\web-fonts-with-css\css\fontawesome-all.css">
+    <link rel="stylesheet" href="assets\stylesheets\main.css">
+    <script src="assets/stylesheets/playlist.js"></script>
+    <script src="assets/stylesheets/main.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="page_loader" class="">
+            <div>
+                <div class="icon ion-spin"></div>
+                <p>loading</p>
+            </div>
+        </div>
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <a href="#" id="head-btn"><i class="fas fa-bars"></i></a>
+                    <input type="checkbox" name="check" id="id">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">advertise</a></li>
+                        <li><a href="#">press</a></li>
+                        <li><a href="#">help & support</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="#" id="lang">language:</a></li>
+                        <li class="dropdown"><a href="#" id="bdr"></a>
+                            <ul>
+                                <li><a href="#" id="hin">hindi</a></li>
+                                <li><a href="#" id="eng">english</a></li>
+                                <li><a href="#" id="pun">punjabi</a></li>
+                                <li><a href="#" id="guj">gujarati</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <sub id="sub1">
+                <div class="sub1-right">
+                    <a href="#"><img src="assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="sub1-left">
+                    <input type="text" id="song_name">
+                    <input type="submit" value="search" id="search">
+                </div>
+            </sub>
+            <sub>
+                <div class="sub-span">
+                    <span>“Without music, life would be a mistake.” </span>
+                </div>
+                <div class="sub-bar">
+                    <ul>
+                        <li id="home"><a href="#">home</a></li>
+                        <li id="slist"><a href="#">Search</a></li>
+                        <li id="plist"><a href="#">my music</a></li>
+                    </ul>
+                </div>
+            </sub>
+        </header>
+        <main>
+            <div id="presearch" class="hide">
+                <img src="assets/images/audit.jpg" alt="">
+            </div>
+            <div id="searchdiv" class="hide">
+                <div class="sub-pro">
+                    <ul id="searchlist"></ul>
+                </div>
+            </div>
+            <div id="products1" class="">
+                <div class="sub-pro">
+                    <div class="row">
+                        <div class="b">
+                            <img src="assets\images\2766_2.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="raa" class="s">raazi</span>
+                            <span>Shankar-Ehsaan-Loy</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="b">
+                            <img src="assets\images\203_4.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="oct" class="s">october</span>
+                            <span>Shantanu Moitra, Anupam Roy</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="b">
+                            <img src="assets\images\42598-102-not-out-2018-songs.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="102n" class="s">102 not out</span>
+                            <span>Salim-Sulaiman</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="b">
+                            <img src="assets\images\Baaghi 2.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="baa" class="s">baaghi 2</span>
+                            <span>Panjabi MC, Mithoon</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="b">
+                            <img src="assets\images\4706392565.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="ghr" class="s">Ghar Se Nikalte Hi</span>
+                            <span>Armaan Malik, Amaal Malik</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="b">
+                            <img src="assets\images\Raid.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="rai" class="s">Raid</span>
+                            <span> Tanishk Bagchi, Amit Trivedi </span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="b">
+                            <img src="assets\images\Heer.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="hee" class="s">heer</span>
+                            <span>Ved Sharma</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="b">
+                            <img src="assets\images\saumartaba.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="sau" class="s">Sau Martaba</span>
+                            <span> Keshav Kumar </span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="b">
+                            <img src="assets\images\hichki-2_200.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="hic" class="s">hichki</span>
+                            <span> Jasleen Royal</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="b">
+                            <img src="assets\images\Dil-Juunglee-2018-Hindi-Movie-Songs-Download.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="ban" class="s">bandeya</span>
+                            <span>Arjit Singh</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="products2" class="hide">
+                <div class="sub-pro">
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\migente.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="mig" class="s">mi gente</span>
+                            <span> J. Balvin, Willy William</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\3591069749.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="hav" class="s">havana</span>
+                            <span>Camila Cabello</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\200x0w.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="thu" class="s">thunder</span>
+                            <span>Evolve by Imagine Dragons</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\239685.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="sof" class="s">so far away</span>
+                            <span>Martin Garrix, David Guetta</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\3918135526.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="hol" class="s">hold on</span>
+                            <span>Ananya Birla </span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\200x200bb.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="fri" class="s">friends</span>
+                            <span>Marshmello, Anne-Marie </span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\call-out-my-name.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="cal" class="s">call out my name</span>
+                            <span>The Weeknd </span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\wolves.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="wol" class="s">wolves</span>
+                            <span>Marshmello, Selena Gomez</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\571115.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="say" class="s">say something</span>
+                            <span> Justin Timberlake </span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\never_be.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="ban" class="s">never be the same</span>
+                            <span> Camila Cabello </span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="products3" class="hide">
+                <div class="sub-pro">
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\66345.png" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="tre" class="s">trending nakhra</span>
+                            <span>Amrit Maan</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\66150.png" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="oct" class="s">teeje week</span>
+                            <span>Jordan Sandhu </span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\66220.png" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="hig" class="s">high end</span>
+                            <span>Diljit Dosanjh</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\66129.png" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="lal" class="s">la la la</span>
+                            <span> Arjun Kanungo</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\66357.png" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="sha" class="s">shada</span>
+                            <span>Parmish Verma</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\lahore.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="lah" class="s">lahore</span>
+                            <span> Guru Randhawa</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\raatdigedi.png" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="raa" class="s">raat di gedi</span>
+                            <span>Diljit Dosanjh</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\milllona.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="mil" class="s">mill lo na</span>
+                            <span> Guri </span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\naah.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="naa" class="s">naah</span>
+                            <span>Harrdy Sandhu</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\3031972659.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="bad" class="s">badnam</span>
+                            <span>Mankirt Aulakh</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="products4" class="hide">
+                <div class="sub-pro">
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\love.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="dhu" class="s">dhun laagi</span>
+                            <span> Siddharth Amit Bhavsar</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\200x0w (1).jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="bew" class="s">Bewafa Tane Dur Thi Salam</span>
+                            <span>Jiganesh Kaviraj</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\200x0w (2).jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="odh" class="s">Odhni odu</span>
+                            <span>Vikas Ambore</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\200x0w (3).jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="bhu" class="s">Bhuli Javu Che</span>
+                            <span>Sachin Sanghvi</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\4250135222.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="rev" class="s">reva</span>
+                            <span> Divya Kumar</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\4024680942.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="udu" class="s">Udu Aaje</span>
+                            <span> Sunidhi Chauhan</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\200x0w (4).jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="raa" class="s">Icon</span>
+                            <span>Nakash Aziz</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\3576658833.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="sar" class="s">Sar Sar Ke</span>
+                            <span>Aditya Gadhvi</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\6ZWmp37eRnc.jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="vha" class="s">Vhalam Aavo Ne</span>
+                            <span>Jigardan Gadhavi</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap">
+                        <div class="b">
+                            <img src="assets\images\200x0w (5).jpg" alt="">
+                        </div>
+                        <div class="c">
+                            <span id="bad" class="s">Mohabbat Khape</span>
+                            <span>Vijay Suvada</span>
+                            <button class="atp">Add to Playlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hide" id="list">
+                <ul id="pul">
+                    <li id="add">
+                        <img src="assets/images/135-512.png" alt="">
+                        <span>ADD SONGS TO YOUR PLAYLIST</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="play">
+                <audio id="audio" controls src="">
+                </audio>
+                <div class="play_bar">
+                    <div class="play-bar-cont">
+                        <span id="pbc"></span>
+                    </div>
+                    <div class="play-bar-button">
+                        <button id="back-btn">
+                            <i class="fas fa-step-backward"></i>
+                        </button>
+                        <button id="play-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="pause-btn">
+                            <i class="fas fa-pause"></i>
+                        </button>
+                        <button id="forward-btn">
+                            <i class="fas fa-step-forward"></i>
+                        </button>
+                    </div>
+                    <div class="play-bar-range">
+                        <input type="range" value="0" id="rangeslide" max="0">
+                        <span id="currrange"></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer">
+                <div class="footer-1">
+                    <h3>information</h3>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">sitemap</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">terms and conditions</a></li>
+                        <li><a href="#">legal notice</a></li>
+                    </ul>
+                </div>
+                <div class="footer-1">
+                    <h3>our offers</h3>
+                    <ul>
+                        <li><a href="#">new products</a></li>
+                        <li><a href="#">top sellers</a></li>
+                        <li><a href="#">specials</a></li>
+                        <li><a href="#">products</a></li>
+                        <li><a href="#">comments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-1">
+                    <h3>your account</h3>
+                    <ul>
+                        <li><a href="#">your account</a></li>
+                        <li><a href="#">personal info</a></li>
+                        <li><a href="#">prices</a></li>
+                        <li><a href="#">address</a></li>
+                        <li><a href="#">locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-2">
+                    <h3>get in touch</h3>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-rss"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <span>© 2018 Musicstore. All Rights Reserved | Design by Meghal Singhal</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
