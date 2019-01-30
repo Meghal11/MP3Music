@@ -597,8 +597,6 @@ function hidePlaylist() {
 }
 
 function performSearch() {
-    event.preventDefault();
-        
     searched = true;
     if (searching == 1) {
         ul = document.getElementById("searchlist");
