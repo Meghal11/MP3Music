@@ -857,6 +857,7 @@ main {
 
 .sub-pro {
     display: inline-block;
+    width: 100%;
 }
 
 #searchlist li {
